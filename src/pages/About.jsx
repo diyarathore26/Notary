@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div>
       <Banner
-        title="About Our Firm"
-        description="20+ years of legal expertise delivering justice and trusted counsel."
+        title="About Us"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus."
       />
       <LegalSection />
     </div>

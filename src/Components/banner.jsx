@@ -6,8 +6,7 @@ function Banner({ title, description }) {
     <section
       className="banner"
       style={{
-        backgroundImage:
-          "url('https://img.freepik.com/premium-photo/lawyer-businessman-working-with-lawbook-office-courtroom-legal-counsel-with-gavel-legal-law-justice-lawyer-concept-judge-gavel-hammer-lawyer-desk_1715-18662.jpg')",
+        backgroundImage: "url(/img-banner.png)",
       }}
     >
       <div className="banner-overlay">

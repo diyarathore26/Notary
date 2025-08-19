@@ -24,15 +24,14 @@
 .legal-content {
   flex: 1;
   max-width: 500px;
-  
 }
 
 .legal-content h2 {
   font-size: 28px;
 
   font-weight: 300;
-    color: #364d59;
-  font-family: 'Playfair Display';
+  color: #364d59;
+  font-family: "Playfair Display";
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 20px;
@@ -42,7 +41,6 @@
 .legal-content h2 span {
   color: #1d3557;
   font-weight: bold;
-   
 }
 
 .legal-content p {
@@ -54,7 +52,7 @@
 
 .appointment-btn {
   padding: 12px 24px;
-  background: #fEE2B3;
+  background: #fee2b3;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -66,4 +64,25 @@
 
 .appointment-btn:hover {
   background: #e9c46a;
+}
+@media (max-width: 549px) {
+  .legal-section {
+    flex-direction: column; /* stack vertically */
+    text-align: center; /* center text for mobile */
+    padding: 40px 20px; /* reduce padding */
+  }
+
+  .legal-images {
+    justify-content: center; /* center images */
+    flex-wrap: wrap; /* allow wrapping if multiple images */
+  }
+
+  .legal-images .image {
+    width: 100%; /* make images responsive */
+    max-width: 300px;
+  }
+
+  .legal-content {
+    max-width: 100%;
+  }
 }

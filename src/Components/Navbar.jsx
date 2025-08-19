@@ -4,16 +4,28 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   const [hoverDropdown, setHoverDropdown] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
+      {/* Logo */}
       <div className="logo">
         <Link to="/">Notary</Link>
       </div>
 
-      <ul className="nav-links">
+      {/* Hamburger Button*/}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
-          <NavLink to="/" className="nav-item">
+          <NavLink
+            to="/"
+            className="nav-item"
+            onClick={() => setMenuOpen(false)}
+          >
             Home
           </NavLink>
         </li>
@@ -24,14 +36,12 @@ function Navbar() {
           onMouseEnter={() => setHoverDropdown(true)}
           onMouseLeave={() => setHoverDropdown(false)}
         >
-          {/* Clicking this goes to /practice-areas */}
           <NavLink to="/practice-areas" className="nav-item">
             Practice Areas ▾
           </NavLink>
 
-          {/* Dropdown appears on hover */}
           {hoverDropdown && (
-            <ul className="dropdown-menu" style={{ cursor: "pointer" }}>
+            <ul className="dropdown-menu">
               <li>Bankruptcy Law</li>
               <li>Business Law</li>
               <li>Civil Rights Law</li>
@@ -43,17 +53,29 @@ function Navbar() {
         </li>
 
         <li>
-          <NavLink to="/testimonials" className="nav-item">
+          <NavLink
+            to="/testimonials"
+            className="nav-item"
+            onClick={() => setMenuOpen(false)}
+          >
             Testimonials
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-item">
+          <NavLink
+            to="/about"
+            className="nav-item"
+            onClick={() => setMenuOpen(false)}
+          >
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className="nav-item">
+          <NavLink
+            to="/contact"
+            className="nav-item"
+            onClick={() => setMenuOpen(false)}
+          >
             Contact
           </NavLink>
         </li>

@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1.2fr 1fr;
   gap: 20px;
   padding: 40px;
-  align-items: start
+  align-items: start;
 }
 
 /* Left */
@@ -13,8 +13,8 @@
 }
 
 /* Middle */
-.middle{
-  text-align:start;
+.middle {
+  text-align: start;
 }
 .middle h2 {
   font-size: 28px;
@@ -42,7 +42,6 @@
   font-weight: 500;
 }
 
-
 /* Right */
 .right .faq-item {
   margin-bottom: 10px;
@@ -67,4 +66,10 @@
   background: #fff;
   color: #d1cdcd;
   border-top: 1px solid #ddd;
+}
+@media (max-width: 549px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }

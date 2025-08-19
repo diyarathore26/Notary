@@ -42,3 +42,46 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Default styles (apply to all unless overridden by breakpoints) */
+
+/* Mobile: max-width 575px */
+@media (max-width: 575px) {
+  .App-header {
+    font-size: 14px; /* smaller font */
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin; /* smaller logo */
+  }
+
+  .App {
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+/* Tablet: 576px – 991px */
+@media (min-width: 576px) and (max-width: 991px) {
+  .App-header {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+}
+
+/* Desktop: ≥992px */
+@media (min-width: 992px) {
+  .App-header {
+    font-size: calc(10px + 2vmin);
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 40vmin;
+  }
+}

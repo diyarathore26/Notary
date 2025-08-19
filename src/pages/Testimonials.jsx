@@ -7,8 +7,8 @@ const Testimonials = () => {
   return (
     <div>
       <Banner
-        title="Get in Touch"
-        description="Reach out to us today for consultations and legal support."
+        title="Happy Customers Testimonials"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus."
       />
       <Testimonial />
       <LegalSection />

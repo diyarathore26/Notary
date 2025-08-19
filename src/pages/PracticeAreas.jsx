@@ -7,8 +7,8 @@ const PracticeAreas = () => {
   return (
     <div>
       <Banner
-        title="Our Practice Areas"
-        description="Expertise in corporate, civil, and criminal law tailored to your needs."
+        title="Practice Areas"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus."
       />
       <Practice />
       <LegalSection />
