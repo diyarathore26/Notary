@@ -51,7 +51,6 @@ function Navbar() {
             </ul>
           )}
         </li>
-
         <li>
           <NavLink
             to="/testimonials"

@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/hero.css";
+import Contact from "../pages/Contact";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="hero">
       <div className="hero-content">
@@ -23,7 +26,9 @@ const Hero = () => {
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="date" />
-            <button type="submit">Book Appointment</button>
+            <button type="submit" onClick={() => navigate("/contact")}>
+              Book Appointment
+            </button>
           </form>
         </div>
       </div>
